@@ -1,0 +1,24 @@
+<%- include("./components/header.ejs") %>
+<div class="earning">
+    <ul class="errors">
+    </ul>
+    <div class="summary" >
+        <div class="wrapper">
+            <h4 id="total"></h4>
+            <p>total</p>
+        </div>
+        <div class="wrapper">
+            <h4 id="outstanding"></h4>
+            <p>outstanding</p>
+        </div>
+    </div>
+    <form class="new-earning form-primary">
+        <label for="year">amount</label>
+        <input required min="0" type="number" name="amount" id="amount-input" placeholder="amount earning" >
+        <label for="outstanding">outstanding</label>
+        <input default="0"min="0" type="number" name="outstanding" id="outstanding-input" placeholder="amount outstanding" >
+        <button id="submit" >login</button>
+    </form>
+</div>
+<script type="module" src="../../../static/js/earning.js" ></script>
+<%- include("./components/footer.ejs") %>

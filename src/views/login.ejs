@@ -1,0 +1,15 @@
+<%- include("./components/header.ejs") %>
+<div class="login" style="text-align: center;">
+    <h1>Admin login</h1>
+    <ul id="errors" style="display: block;width: 100%;border: peachpuff;padding: 8px;text-align: center;margin: 15px 0px;box-sizing: border-box;" class="errors">
+    </ul>
+    <form id="login-form" class="form-primary" >
+        <label for="username">username</label>
+        <input required min="3" type="text" name="username" id="username-input" placeholder="username" >
+        <label for="password">password</label>
+        <input required min="3" type="password" name="password" id="password-input" placeholder="password" >
+        <button id="submit" >login</button>
+    </form>
+    <script type="module" src="../../../static/js/login.js" ></script>
+</div>
+<%- include("./components/footer.ejs") %>
